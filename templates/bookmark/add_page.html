@@ -6,7 +6,7 @@
 
     <body>
         <h1>Add a Page in {{ category_name }}</h1>
-		{% if category_exists %}
+	{% if category_exists %}
         <form id="page_form" method="post" action="/bookmark/category/{{ category_name_url }}/add_page/">
 
             {% csrf_token %}
